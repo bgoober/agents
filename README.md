@@ -1,0 +1,1 @@
+Practicing with Fetch.ai's micro agents, starting with the alice and bob tutorial.
