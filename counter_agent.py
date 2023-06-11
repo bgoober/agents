@@ -6,6 +6,10 @@ from uagents import Agent, Context
 # create the Agent object, called agent, and name it "counter"
 counter_agent = Agent(name = "counter")
 
+# print your agent's identifier/address and its fetch network/wallet address
+print("uAgent address/identifier: ", counter_agent.address)
+print("Fetch network/wallet address: ", counter_agent.wallet.address())
+
 # decorate the next function with an on_interval task
 @counter_agent.on_interval(period=2.0)
 async def increment_count(ctx: Context):
